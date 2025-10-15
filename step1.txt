@@ -1,0 +1,9 @@
+1. Pydantic vérifie automatiquement que les données respectent les types définis dans les modèles. Si les données ne sont pas correctes, l’API renvoie une erreur.
+
+2. Si on envoie un product_id invalide (comme une lettre), FastAPI renvoie une erreur 422 en disant que le type attendu est un entier.
+
+3. Pour ajouter un produit, on peut créer un endpoint POST /products qui prend le nom, le prix et la description, génère un ID automatiquement et renvoie le produit ajouté.
+
+curl -X POST http://localhost:8000/products \
+-H "Content-Type: application/json" \
+-d '{"name":"Monitor","price":199.99,"description":"27-inch display"}'

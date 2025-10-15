@@ -1,0 +1,5 @@
+1. FastMCP lit le schéma OpenAPI de FastAPI pour créer automatiquement des outils que l'IA peut appeler.
+
+2. Le décorateur @mcp.tool rend une fonction utilisable directement par l'IA, simplifiant les interactions.
+
+3. Pour sécuriser le MCP : utiliser l'authentification (API key ou JWT), HTTPS, rate-limiting et firewall.
